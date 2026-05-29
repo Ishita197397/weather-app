@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+ background: linear-gradient(
+  160deg,
+  #2b124c,
+  #522b5b,
+  #0f4c75
+);
+
+  font-family: sans-serif;
+}
+
+header {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 700px;
+  padding: 0.8rem 1rem;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 25px;
+
+  background: rgb(241, 237, 237);
+
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: rgb(30, 29, 29);
+  width: 100%;
+  font-size: 1rem;
+}
+
+.search-bar input::placeholder {
+  color: rgba(23, 22, 22, 0.7);
+}
+
+.material-icons {
+  color: white;
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-card {
+  width: 700px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  padding: 2rem;
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+
+  color: white;
+
+  transition: 0.3s ease;
+}
+
+.weather-card:hover {
+  transform: translateY(-4px);
+}
+
+/* MAIN INFO */
+
+.weather-card h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.weather-card h1 {
+  font-size: 5rem;
+
+  line-height: 1;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 0.8rem;
+
+  text-align: center;
+  margin-top:1rem;
+  margin-bottom: 1rem;
+}
+
+.weather-card p {
+  text-align: center;
+
+  font-size: 1.6rem;
+font-style: italic;
+  opacity: 0.9;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather-icon {
+  width: 70px;
+
+  height: 70px;
+}
+
+/* DETAILS */
+
+.details {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 1rem;
+}
+
+.details div,
+.sun-box {
+  flex: 1;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  padding: 1rem;
+
+  border-radius: 14px;
+}
+
+.details div {
+  text-align: center;
+}
+
+.details span,
+.sun-box span {
+  display: block;
+
+  font-size: 1rem;
+
+  opacity: 0.75;
+
+  margin-bottom: 0.4rem;
+}
+
+.details h3,
+.sun-box h3 {
+  font-size: 1.3rem;
+
+  font-weight: 500;
+}
+
+/* SUNRISE SUNSET */
+
+.sun-section {
+  display: flex;
+
+  gap: 1rem;
+}
+
+.sun-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.sun-icon {
+  width: 45px;
+
+  height: 45px;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+
+  justify-content: space-between;
+  font-style: normal;
+
+  font-size: 1rem;
+
+  opacity: 0.75;
+}
